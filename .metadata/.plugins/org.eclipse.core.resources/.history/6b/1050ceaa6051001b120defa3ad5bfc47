@@ -1,0 +1,31 @@
+package funcoesmatematicas;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Ex04 {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		byte id;
+		int horas, valor;
+		int salario;
+		
+		id = sc.nextByte();
+		horas = sc.nextInt();
+		valor = sc.nextInt();
+		
+		salario = horas * valor;
+		
+		
+		System.out.println("NUMBER = " + id);
+		System.out.printf("SALARY = U$ %.2f%n", salario);
+		
+		sc.close();
+
+	}
+
+}

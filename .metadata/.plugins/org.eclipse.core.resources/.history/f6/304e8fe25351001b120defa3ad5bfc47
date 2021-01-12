@@ -1,0 +1,23 @@
+package funcoesmatematicas;
+
+import java.util.Scanner;
+
+public class Ex01 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int valor1 = 10;
+		int valor2 = 30;
+		int soma;
+		
+		soma = valor1 + valor2;
+		
+		valor1.sc.nextInt();
+		
+		System.out.println("SOMA = " + soma);
+		
+	}
+
+}

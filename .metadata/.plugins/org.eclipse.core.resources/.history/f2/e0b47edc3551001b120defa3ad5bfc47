@@ -1,0 +1,17 @@
+package _02testeprocessamento;
+
+public class Casting {
+	
+	public static void main (String[] args) {
+	
+		double a;
+		int b;
+		
+		a = 5.0;
+		b = (int) a; // declarando que a varíavel "a" que era float, será int
+		
+		System.out.println(b);
+
+	}
+
+}
