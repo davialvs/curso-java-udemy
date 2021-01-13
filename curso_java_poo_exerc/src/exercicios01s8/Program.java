@@ -1,6 +1,6 @@
-package poo;
+package exercicios01s8;
 
-public class Main {
+public class Program {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
