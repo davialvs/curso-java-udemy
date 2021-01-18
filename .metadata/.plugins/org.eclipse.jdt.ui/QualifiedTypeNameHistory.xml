@@ -4,7 +4,9 @@
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="ex01_entity.Rectangle"/>
     <fullyQualifiedTypeName name="membrosestaticos03_util.Calculator"/>
-    <fullyQualifiedTypeName name="java.util.Locale"/>
     <fullyQualifiedTypeName name="ex04membrosestatico_util.CurrencyConverter"/>
+    <fullyQualifiedTypeName name="sobrecarga_entities.Product"/>
+    <fullyQualifiedTypeName name="java.util.Locale"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="xfinalexerc_entities.BankAccount"/>
 </qualifiedTypeNameHistroy>
