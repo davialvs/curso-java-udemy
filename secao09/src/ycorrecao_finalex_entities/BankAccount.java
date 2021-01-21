@@ -16,7 +16,7 @@ public class BankAccount {
 		this.number = number;
 		this.holder = holder;
 		//this.balance = balance;
-		deposit(initialDeposit); //a conta do banco recebe como atributo o método deposito() para o parametro "initialDeposit" ser utilizado. 
+		deposit(initialDeposit); // Usa o método deposit() como atributo recebendo um deposito inicial como parametro
 	}
 
 	
