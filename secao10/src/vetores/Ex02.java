@@ -22,6 +22,7 @@ public class Ex02 {
 		}
 		
 		double soma = 0;
+		
 		for (int i = 0; i<vect.length; i++) { //vect.lenght = é a quantidade de elementos do vetor
 			soma += vect[i].getPrice(); // pega o preço do produto na posição que ele estiver em i e coloca dentro da variavel soma
 		}
