@@ -1,4 +1,4 @@
-package VetoresExFinal;
+package vetores_ex_final;
 
 public class Student {
 	

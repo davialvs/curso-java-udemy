@@ -11,7 +11,7 @@ public class Ex02 {
 		Scanner sc = new Scanner(System.in);
 		
 		int n = sc.nextInt();
-		Ex02Class[] vect = new Ex02Class[n];
+		Ex02Class[] vect = new Ex02Class[n]; //vetor de "n" produtos
 		
 		for (int i = 0; i<n; i++) {
 			sc.nextLine();

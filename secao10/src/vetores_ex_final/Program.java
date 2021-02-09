@@ -1,9 +1,7 @@
-package VetoresExFinal;
+package vetores_ex_final;
 
 import java.util.Locale;
 import java.util.Scanner;
-
-import vetores.Ex02Class;
 
 public class Program {
 
