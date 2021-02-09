@@ -30,15 +30,15 @@ public class Program {
 		System.out.println("How many rooms will be ranted? ");
 		int rooms = sc.nextInt();
 		
-		
 		String name;
 		String email;
+		
 		for (int i = 0; i<rooms; i++) { 
 			sc.nextLine();
 			System.out.println("Rent #" + i);
 			System.out.print("Name: ");
 			name = sc.nextLine();
-			System.out.print("Room: ");
+			System.out.print("E-mail: ");
 			email = sc.next();
 			
 			student[i] = new Student(name, email);
