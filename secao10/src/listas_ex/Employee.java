@@ -36,7 +36,7 @@ public class Employee {
 	
 	//Methods
 	public void salaryIncrease (double percentage) {
-	salary *= percentage/100; // adiciona o incremento no salário (salário recebe ele mesmo + o valor da porcentagem incrementada)
+	salary += salary * percentage/100; // adiciona o incremento no salário (salário recebe ele mesmo + o valor da porcentagem incrementada)
 	}
 	
 	public String toString() {
