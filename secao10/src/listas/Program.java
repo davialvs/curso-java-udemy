@@ -11,9 +11,9 @@ public class Program {
 		List<String> listNomes = new ArrayList<>(); // lista de números inteiros
 		
 		listNomes.add("Maria"); // add a string "Maria" na lista
-		listNomes.add("Gabriel");
-		listNomes.add("Davi");
-		listNomes.add("Kelvin");
+		listNomes.add("Alex");
+		listNomes.add("Bob");
+		listNomes.add("Anna");
 		
 		listNomes.add(2, "Marco"); //Adiciona uma string a posição 2 especificamente
 		
@@ -25,8 +25,8 @@ public class Program {
 		
 		System.out.println("-------------------------------------------------");
 		
-		listNomes.remove("Anna"); //remove uma string da lista 
-		listNomes.remove(1);
+		//listNomes.remove("Anna"); //remove uma string da lista 
+		//listNomes.remove(1);
 		listNomes.removeIf(x -> x.charAt(0) == 'M'); // remoção por predicado
 		
 		System.out.println("-------------------------------------------------");
@@ -34,13 +34,14 @@ public class Program {
 		System.out.println("Index of Bob: " + listNomes.indexOf("Marco"));
 		System.out.println("-------------------------------------------------");
 		
-		List<String> result = listNomes.stream().filter(x -> x.charAt(0) == 'A').collect(Collectors.toList());
+		//Pega a lista "listNomes" e filtra apenas os nomes com a letra 'A' e devolve numa nova lista somente esses elementos
+		List<String> result = listNomes.stream().filter(x -> x.charAt(0) == 'A').collect(Collectors.toList()); // Nova lista
 		
 		for (String x : result) { 
 			System.out.println(x);
 		}
-		System.out.println("-------------------------------------------------");
-		String name = listNomes.stream().filter(x -> x.charAt(0) == 'A').findFirst().orElse(null);
+		System.out.println("-------------------------------------------------");           //Pode ser passada uma mensagem no parametro do "orElse"
+		String name = listNomes.stream().filter(x -> x.charAt(0) == 'A').findFirst().orElse(null); // Encontra o primeiro elemento que começa com a letra 'A' na lista
 		System.out.println(name);
 
 	}
