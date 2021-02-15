@@ -1301,3 +1301,36 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.debug 4 130 2021-02-15 19:22:41.837
+!MESSAGE Invalid stack frame
+
+!ENTRY org.eclipse.jdt.debug 4 130 2021-02-15 19:22:42.569
+!MESSAGE Invalid stack frame
+
+!ENTRY org.eclipse.jdt.debug 4 130 2021-02-15 19:22:43.752
+!MESSAGE Invalid stack frame
+
+!ENTRY org.eclipse.jdt.debug 4 130 2021-02-15 19:27:30.183
+!MESSAGE Invalid stack frame
+
+!ENTRY org.eclipse.jdt.debug 4 130 2021-02-15 19:41:12.992
+!MESSAGE Invalid stack frame
+
+!ENTRY org.eclipse.jdt.debug 4 130 2021-02-15 19:41:21.045
+!MESSAGE Invalid stack frame
+
+!ENTRY org.eclipse.jdt.debug 4 130 2021-02-15 19:41:23.759
+!MESSAGE Invalid stack frame
+
+!ENTRY org.eclipse.jdt.debug 4 130 2021-02-15 19:41:24.507
+!MESSAGE Invalid stack frame
+
+!ENTRY org.eclipse.jdt.debug 4 130 2021-02-15 19:42:08.631
+!MESSAGE Invalid stack frame
+
+!ENTRY org.eclipse.jdt.debug 4 130 2021-02-15 19:42:20.152
+!MESSAGE Invalid stack frame
+
+!ENTRY org.eclipse.jdt.debug 4 130 2021-02-15 19:50:30.224
+!MESSAGE Invalid stack frame
