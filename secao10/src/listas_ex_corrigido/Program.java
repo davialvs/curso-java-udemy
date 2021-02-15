@@ -42,7 +42,7 @@ public class Program {
 		} else {
 			System.out.print("Enter the percentage: ");
 			double percent = sc.nextDouble();
-			listaDeFuncionarios.get(pos).increaseSalary(percent);
+			listaDeFuncionarios.get(pos).increaseSalary(percent); //get(pos) acessa a posição do funcionario que está na posição "pos(i)"
 		}
 		
 		System.out.println();
@@ -54,13 +54,14 @@ public class Program {
 		sc.close();
 	}
 		//Deve ser static porque o método main é static
-		public static Integer position(List<Employee> list, int id) { // Função para dizer qual é a posição do ID na lista
+		// Função para dizer qual é a posição do ID na lista
+		public static Integer position(List<Employee> list, int id) { //Recebe como argumento uma lista e um ID
 			for(int i=0; i<list.size(); i++) {
-				if (list.get(i).getId() == id) {
-					return i;
+				if (list.get(i).getId() == id) { //Testar se o ID da posição "i" é igual ao que foi digitado | Se o elemento da lista na posição "i" (Pegando o ID) for igual ao ID digitado 
+					return i; //retorna a posição do elemento
 				}
 			}
-			return null;
+			return null; // ou -1 para int primitivo
 		}
 
 }
