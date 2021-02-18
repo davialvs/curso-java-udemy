@@ -17,8 +17,12 @@ SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 
 		Calendar cal = Calendar.getInstance();
 		cal.setTime(d); 
+		int minutes = cal.get(Calendar.MINUTE);
+		int month = 1 + cal.get(Calendar.MONTH); // O mês começa em 0 (janeiro = 0)
 		
-
+		System.out.println("Minutes: " + minutes);
+		System.out.println("Month: " + month);
+		
 	}
 
 }
