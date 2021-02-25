@@ -12,7 +12,8 @@ public class Worker {
 	private WorkerLevel level;
 	private Double baseSalary;
 	
-	private Department department;
+	//Associações
+	private Department department; //Worker tem 1 department
 	private List<HourContract> contracts = new ArrayList<>(); //Quando tiver uma composição (tem-muitos) não deve incluir a lista no construtor, inicia-se a lista vazia
 	
 	public Worker() {
@@ -67,7 +68,7 @@ public class Worker {
 	}*/
 	
 	//Methods
-	public void addContract(HourContract contract) {
+	public void addContract(HourContract contract) { //Pega a lista de contratos e adiciona um contrato (parametro)
 		contracts.add(contract);
 	}
 	
@@ -75,13 +76,13 @@ public class Worker {
 		contracts.remove(contract);
 	}
 	
-	public double income(int year, int month) {
+	public double income(int year, int month) { //Salário base + o ganho dos contratos no mês vigente
 		double soma = baseSalary;
 		Calendar cal = Calendar.getInstance();
-		for (HourContract c : contracts) { //Para cada contrato "c" na lista de contratos faça:
-			cal.setTime(c.getDate());
-			int c_year = cal.get(Calendar.YEAR);
-			int c_month = 1 + cal.get(Calendar.MONTH);
+		for (HourContract c : contracts) { //Para cada contrato "c" na lista de contratos faça: --- percorrendo os contratos
+			cal.setTime(c.getDate()); // Pegou a data do contrato e definiu como a data do calendário
+			int c_year = cal.get(Calendar.YEAR); //Representa o ano do contrato c
+			int c_month = 1 + cal.get(Calendar.MONTH); //Representa o mês do contrato c
 			if(year == c_year && month == c_month) {
 				soma += c.totalValue();
 			}
