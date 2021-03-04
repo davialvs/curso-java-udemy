@@ -2,24 +2,24 @@ package entities;
 
 public class OrderItem {
 	
-	private String name;
+	private Integer quantity;
 	private Double price;
 	
 	public OrderItem() {
 		
 	}
 
-	public OrderItem(String name, Double price) {
-		this.name = name;
+	public OrderItem(Integer quantity, Double price) {
+		this.quantity = quantity;
 		this.price = price;
 	}
 
-	public String getName() {
-		return name;
+	public Integer getQuantity() {
+		return quantity;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setQuantity(Integer quantity) {
+		this.quantity = quantity;
 	}
 
 	public Double getPrice() {
@@ -32,6 +32,6 @@ public class OrderItem {
 
 	//Methods
 	public double subTotal() {
-		return -1;
+		return price * quantity;
 	}
 }

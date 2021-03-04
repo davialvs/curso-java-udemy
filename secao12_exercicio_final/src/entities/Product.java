@@ -6,34 +6,31 @@ import entities.enums.OrderStatus;
 
 public class Product {
 	
-	private Date moment;
-	
-	private OrderStatus status;
+	private String name;
+	private Double price;
 	
 	public Product() {
 		
 	}
 
-	public Product(Date moment, OrderStatus status) {
-		this.moment = moment;
-		this.status = status;
+	public Product(String name, Double price) {
+		this.name = name;
+		this.price = price;
 	}
 
-	public Date getMoment() {
-		return moment;
+	public String getName() {
+		return name;
 	}
 
-	public void setMoment(Date moment) {
-		this.moment = moment;
+	public void setName(String name) {
+		this.name = name;
 	}
 
-	public OrderStatus getStatus() {
-		return status;
+	public Double getPrice() {
+		return price;
 	}
 
-	public void setStatus(OrderStatus status) {
-		this.status = status;
+	public void setPrice(Double price) {
+		this.price = price;
 	}
-	
-	//Methods
 }
