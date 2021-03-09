@@ -32,15 +32,15 @@ public class Program {
 		
 		System.out.println("Enter order data: ");
 		System.out.print("Status: ");
-		OrderStatus status = OrderStatus.valueOf(sc.next());
+		OrderStatus status = OrderStatus.valueOf(sc.next()); //valueOf converte o string para o valor correspondente definido no OrderStatus
 		
-		Order order = new Order(new Date(), status, client);
+		Order order = new Order(new Date(), status, client); //Order associado ao cliente
 		
 		System.out.println("How many items to this order? ");
 		int n = sc.nextInt();
 		
 		//Percorrer os pedidos
-		for (int i=1; i<n; i++) {
+		for (int i=1; i<=n; i++) {
 			System.out.println("Enter #" + i + " item data:");
 			System.out.print("Product name: ");
 			sc.nextLine();
@@ -48,14 +48,14 @@ public class Program {
 			System.out.print("Product price: ");
 			double productPrice = sc.nextDouble();
 			
-			Product product = new Product(productName, productPrice);
+			Product product = new Product(productName, productPrice); // Passo 1: Instanciar o produto
 			
 			System.out.print("Quantity: ");
 			int quantity = sc.nextInt();
 			
-			OrderItem orderItem = new OrderItem(quantity, productPrice, product); 
+			OrderItem it = new OrderItem(quantity, productPrice, product); //Passo 2: Instanciar o item de pedido associado a esse produto
 
-			order.addItem(orderItem);
+			order.addItem(it); //Passo 3: Adicionar o OrderItem dentro da Lista de Items (List<OrderItem>) do meu Pedido
 		}
 		
 		System.out.println();
