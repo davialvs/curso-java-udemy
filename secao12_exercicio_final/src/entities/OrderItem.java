@@ -5,7 +5,7 @@ public class OrderItem {
 	private Integer quantity;
 	private Double price;
 	
-	private Product product;
+	private Product product; // Um item de pedido (OrderItem) tem N produtos (Product)
 	
 	public OrderItem() {
 		
@@ -17,8 +17,8 @@ public class OrderItem {
 		this.product = product;
 	}
 
-	public Integer getQuantity() {
-		return quantity;
+	public Product getProduct() {
+		return product;
 	}
 
 	public void setQuantity(Integer quantity) {
@@ -32,9 +32,29 @@ public class OrderItem {
 	public void setPrice(Double price) {
 		this.price = price;
 	}
+	
+
+	public void setProduct(Product product) {
+		this.product = product;
+	}
+
+	public Integer getQuantity() {
+		return quantity;
+	}
 
 	//Methods
 	public double subTotal() {
 		return price * quantity;
+	}
+	
+	@Override
+	public String toString() {
+		return getProduct().getName() //Pegando o elemento name do produto (product)
+				+ ", $"
+				+ String.format("%.2f", price)
+				+ ", Quantity: "
+				+ quantity
+				+ ", Subtotal: $"
+				+ String.format("%.2f", subTotal());
 	}
 }
