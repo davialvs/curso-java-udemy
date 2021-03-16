@@ -30,4 +30,6 @@
     <fullyQualifiedTypeName name="entities.Order"/>
     <fullyQualifiedTypeName name="entities.Client"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="upcastingdowncasting.Account"/>
+    <fullyQualifiedTypeName name="upcastingdowncasting.BusinessAccount"/>
 </qualifiedTypeNameHistroy>
