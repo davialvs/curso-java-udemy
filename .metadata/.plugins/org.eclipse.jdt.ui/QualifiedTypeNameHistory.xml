@@ -32,4 +32,6 @@
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
     <fullyQualifiedTypeName name="upcastingdowncasting.Account"/>
     <fullyQualifiedTypeName name="upcastingdowncasting.BusinessAccount"/>
+    <fullyQualifiedTypeName name="sobreposicao.Account"/>
+    <fullyQualifiedTypeName name="sobreposicao.BusinessAccount"/>
 </qualifiedTypeNameHistroy>
