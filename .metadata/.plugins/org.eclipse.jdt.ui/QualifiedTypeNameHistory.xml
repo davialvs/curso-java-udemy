@@ -34,4 +34,6 @@
     <fullyQualifiedTypeName name="upcastingdowncasting.BusinessAccount"/>
     <fullyQualifiedTypeName name="sobreposicao.Account"/>
     <fullyQualifiedTypeName name="sobreposicao.BusinessAccount"/>
+    <fullyQualifiedTypeName name="polimorfismo.Account"/>
+    <fullyQualifiedTypeName name="polimorfismo.SavingsAccount"/>
 </qualifiedTypeNameHistroy>
