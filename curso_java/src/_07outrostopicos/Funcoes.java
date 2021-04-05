@@ -23,20 +23,20 @@ public class Funcoes {
 
 	public static int max (int x, int y, int z) { // Função para saber qual o maior número
 		
-		int aux;
+		int maior;
 		
 		if (x > y && x > z) {
-			aux = x;
+			maior = x;
 		} else if (y > z) {
-			aux = y;
+			maior = y;
 		} else {
-			aux = z;
+			maior = z;
 		}
-		return aux; // retorna o valor da variavel conforme o resultado
+		return maior; // retorna o valor da variavel conforme o resultado
 	}
 
-	public static void showResult(int value) { // função do tipo vazia que apenas exibe o resultado da função max
-		System.out.println("Higher = " + value);
+	public static void showResult(int funcao) { // função do tipo vazia que apenas exibe o resultado da função max
+		System.out.println("Higher = " + funcao);
 	}
 
 }

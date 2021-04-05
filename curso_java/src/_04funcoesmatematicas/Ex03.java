@@ -8,6 +8,7 @@ public class Ex03 {
 		
 		Scanner sc = new Scanner(System.in);
 		
+		//Calculando a diferença entre A + B e C + D
 		int A, B, C, D;
 		int diferenca;
 		

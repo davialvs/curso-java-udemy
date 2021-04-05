@@ -9,8 +9,6 @@ public class Ex02Class {
 		this.name = name;
 		this.price = price;
 	}
-
-	
 	//Getter and Setters
 	public String getName() {
 		return name;
@@ -27,9 +25,4 @@ public class Ex02Class {
 	public void setPrice(double price) {
 		this.price = price;
 	}
-	
-	
-	
-	
-
 }

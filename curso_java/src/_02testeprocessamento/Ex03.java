@@ -8,7 +8,7 @@ public class Ex03 {
 		int b;
 		
 		a = 5.0;
-		b = (int) a; // declarando que a varíavel "a" que era float, será int
+		b = (int) a; // declarando que a varíavel "a" que era double, será int
 		
 		System.out.println(b);
 

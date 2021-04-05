@@ -31,8 +31,5 @@ public class Ex02 {
 		System.out.printf("AVERAGE PRICE %.2f%n", media);
 		
 		sc.close();
-		
-
 	}
-
 }
